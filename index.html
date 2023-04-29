@@ -1,78 +1,202 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Blog with old technology, video games, music, photos, and other weird things">
-<meta name="keywords" content="tech, portfolio, butteredcheese, cheese, fella, rats">
-<link rel="shortcut icon" href="pics/02.png">
-<link rel="stylesheet" href="style.css">
 
-<title>GKE GREMS</title>
+<head>
+	<meta charset="utf-8">
+	<title>SYNTHETIC</title>
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="shortcut icon" href="/favicon.gif" />
+	<link rel="stylesheet" href="/css/player.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="/css/new.css">
+	<style type="text/css">
+
+
+
+	</style>
+	
 </head>
 
-<marquee behavior="scroll" direction="left" scrollamount="5" class="blink" style="font-size: 20px; color: #FFC0CB;">
-    Welcome to GRK GREMS. An Old Internet Inspired Site. Enjoy your Stay!
-</marquee>
-
 <body>
+	<div id="content">
+		<div class="toptext">
+			<h1> SYNTHETIC</h1>
+		</div>
+		<div id="menu">
+			<div class="navtop">
+				<h1>navigation</h1>
 
-            
+			</div>
 
-        <center>
-            <img src="pics/03_pixelated.png" alt="cheese" width="500" height="600">
-        </center>
+			<div class="navigation">
+				<div class="tag-wrap">
+					<div class="btn menu1" onmouseover="document.getElementById('sound1').play()">
+						<h2>
+							<img src="ring.gif" alt=""> info
+						</h2>
+						<span class="little">about the site & webmaster.</span>
+					</div>
+				</div>
 
-        <div style="text-align:center;">
-            <h3>
-                <nav class="navbar">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Me</a>
-                    <a href="https://github.com/Laughable33">My Github</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="rats.html">Rats</a>
-                    <a href="egg.html">Invaders?</a>
+				<a href="/info.html">
+					<li onmouseover="document.getElementById('sound2').play()">About the Site!</li>
+				</a>
 
-                </nav>
-            </h3>
-        </div>
-        
+				
 
+
+				<div class="tag-wrap">
+					<div class="btn menu5" onmouseover="document.getElementById('sound1').play()">
+						<h2> <img src="links.gif" alt=""> Other Stuff</h2>
+						<span class="little">outgoing links & resources.</span>
+					</div>
+				</div>
+
+				<a href="/rats.html">
+					<li onmouseover="document.getElementById('sound2').play()">Rats</li>
+				</a>
+				<a href="/invaders.html">
+					<li onmouseover="document.getElementById('sound2').play()">Invaders</li>
+			</div>
+			</a>
+			<br>
+			<br>
+			<div class="rings">
+			</div>
+		</div>
+		<div id="bodyy">
+			<div id="top">
+				<div class="clocky">
+					<script type="text/javascript">
+						new imageclock.display()
+					</script>
+				</div>
+			</div>
+			<div class="marky">
+				<marquee>
+					<script language="JavaScript">
+						<!--
+						// please keep these lines on when you copy the source
+						// made by: Nicolas - http://www.javascript-page.com
+
+						function getCookieVal(offset) {
+							var endstr = document.cookie.indexOf(";", offset);
+							if (endstr == -1)
+								endstr = document.cookie.length;
+							return unescape(document.cookie.substring(offset, endstr));
+						}
+
+						function GetCookie(name) {
+							var arg = name + "=";
+							var alen = arg.length;
+							var clen = document.cookie.length;
+							var i = 0;
+							while (i < clen) {
+								var j = i + alen;
+								if (document.cookie.substring(i, j) == arg)
+									return getCookieVal(j);
+								i = document.cookie.indexOf(" ", i) + 1;
+								if (i == 0) break;
+							}
+							return null;
+						}
+
+						function SetCookie(name, value) {
+							var argv = SetCookie.arguments;
+
+							var argc = SetCookie.arguments.length;
+
+							var expires = (argc > 2) ? argv[2] : null;
+							var path = (argc > 3) ? argv[3] : null;
+							var domain = (argc > 4) ? argv[4] : null;
+							var secure = (argc > 5) ? argv[5] : false;
+							document.cookie = name + "=" + escape(value) +
+								((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+								((path == null) ? "" : ("; path=" + path)) +
+								((domain == null) ? "" : ("; domain=" + domain)) +
+								((secure == true) ? "; secure" : "");
+						}
+
+						function DeleteCookie(name) {
+							var exp = new Date();
+							FixCookieDate(exp);
+							exp.setTime(exp.getTime() - 1);
+							var cval = GetCookie(name);
+							if (cval != null)
+								document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+						}
+
+						var cookie_date = new Date(document.lastModified);
+						var expdate = new Date();
+						expdate.setTime(expdate.getTime() + (5 * 24 * 60 * 60 * 1000));
+
+						document.write("<b>LAST UPDATED: </b> " + document.lastModified);
+						if (!(cookie_date == GetCookie("cookie_date"))) {
+							SetCookie("cookie_date", cookie_date, expdate);
+							document.write(" - - - - <font color='#90701e'><small>Page has changed since your last visit!</small></font><br>");
+						}
+						//
+						-->
+
+					</script>
+				</marquee>
+
+			</div>
+			<div id="welcome">
+				<div id="welcometxt">
+					<p></p>
+					<b><i>Everything is Synthetic</i></b>
+					<p>Welcome to <b>SYNTHETIC</b>This place is like my area where I post anything and everything. It is the place where you can get the most wacky stuff you will ever see. But also just a chill place.</p>
+						<center>
+							<p>This site looks best on desktop.</p>
+							<img src="/pictures/buttons/neocities_button.gif" alt=""> <img src="/pictures/buttons/bookmark_this_page.gif" alt=""> <img src="/pictures/buttons/wwwbutton.gif" alt=""> <img src="/pictures/buttons/got_html.gif" style="height:31px; width: 88px;">
+						</center>
+				</div>
+			</div>
+			<div class="buttons">
+				<marquee behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="/pictures/buttons2/88x31.gif">
+					<img src="/pictures/buttons2/aniquake.gif">
+					<img src="/pictures/buttons2/any88x31.gif">
+					<img src="/pictures/buttons2/apple_fatal_error.gif">
+					<img src="/pictures/buttons2/drp88x31.gif">
+					<img src="/pictures/buttons2/ikewise_button_green.gif">
+					<img src="/pictures/buttons2/ka88x31.gif">
+					<img src="/pictures/buttons2/mastodon_button_1.gif">
+					<img src="/pictures/buttons2/ms.gif">
+					<img src="/pictures/buttons2/neocities.gif">
+					<img src="/pictures/buttons2/notepadpp.gif">
+					<img src="/pictures/buttons2/rib88x31.gif">
+					<img src="/pictures/buttons2/site_best_viewed_with_monitor.gif">
+					<img src="/pictures/buttons2/startpage_button.gif">
+					<img src="/pictures/buttons2/valid-xhtml10-blue.png">
+					<img src="/pictures/buttons2/vcss-blue.png">
+					<img src="/pictures/buttons2/anyos.gif">
+					<img src="/pictures/buttons2/hotmail2.gif">
+
+				</marquee>
+			</div>
+
+			<div id="box1">
+				<div class="left">
+					<div id="newart">
+						<h2>Stuff</h2>
+						<img src="/pictures/KernalSandas.png" alt="Kernal" style="width:300px;height:300px;"> 
+					</div>
+				</div>
+				<div class="right">
+					<h2> <img src="/graphics/biggraphic/bbs2.gif" alt="">What is Up with Me?</h2>
+					<div id="newstxt">
+						<ul>
+							<li><b>4/28/23</b>
+								<h4>Redid Everything like I always do....
+									<ul class="innerlist">
+									</ul>
+								</h4>
+					</div>
+				</div>
+			</div>
+		</div>
 </body>
 
-<div style="text-align: center;">
-    <a href="https://neocities.org/" title="This website hosted by NeoCities">
-      <img src="https://anlucas.neocities.org/neocities_button.gif" alt="" style="border: 0;">
-    </a>
-    <img src="https://anlucas.neocities.org/bookmark_this_page.gif" alt="" style="border: 0;">
-    <img src="https://anlucas.neocities.org/affection.gif" alt="" style="border: 0;">
-    <img src="https://anlucas.neocities.org/anybrow.gif" alt="" style="border: 0;">
-    <a href="https://web.archive.org/web/19961020032805/http://www.eff.org/blueribbon.html">
-      <img src="https://anlucas.neocities.org/freespeechforever.gif" alt="" style="border: 0;">
-    </a>
-  </div>
-  <div style="text-align: center;">
-    <a href="https://www.microsoft.com/en-us/default.aspx">
-      <img src="https://anlucas.neocities.org/ms.gif" alt="" style="border: 0;">
-    </a>
-    <span title="Add this to your site if you are against 'code and run', the premature abandonment of web pages.">
-      <img src="https://anlucas.neocities.org/nocodeandrun.gif" alt="">
-    </span>
-    <a href="mailto:info@butteredcheese.org">
-      <img src="https://anlucas.neocities.org/email-icon.gif" alt="" style="border: 0;">
-    </a>
-    <img src="https://anlucas.neocities.org/built_with_microsoft_notepad.gif" alt="" style="border: 0;">
-    <img src="https://anlucas.neocities.org/got_html.gif" alt="">
-    <a href="https://startpage.com/eng/">
-      <img src="https://anlucas.neocities.org/startpage_button.gif" alt="" style="border: 0;">
-    </a>
-  </div>
-  
-
-</div>
-    <footer>
-        <div style="text-align:center;">
-            <p>Miles Davis &copy; 2023</p>
-            <p>Made with &lt;3 by <a href="about.html">Miles Davis</a></p>
-    </footer>
-</body>
 </html>

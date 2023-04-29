@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>About the site</title>
+	<link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/new.css">
+    <link rel="stylesheet" href="/css/player.css">
+
+	<link rel="shortcut icon" href="/favicon.gif" />
+	<style type="text/css">
+    
+		:root {
+			--surface: #c0c0c0;
+			--button-highlight: #ffffff;
+			--button-face: #dfdfdf;
+			--button-shadow: #808080;
+			--window-frame: #0a0a0a;
+			--dialog-blue: #000080;
+			--dialog-blue-light: #1084d0;
+			--link-blue: #0000ff;
+			--border-field: inset -1px -1px var(--button-highlight),
+				inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face),
+				inset 2px 2px var(--window-frame);
+		}
+
+
+
+		#container {
+			margin: 0 auto;
+			width: 800px;
+			height: auto;
+			background-color: rgba(0, 0, 0, 0.5);
+			font-family: IBM Plex Sans;
+			padding: 20px;
+			border-radius: 5px;
+		}
+
+		.text {
+			padding: 10px;
+			text-align: justify;
+			color: #ffffff;
+		}
+
+		.text h1 {
+			text-align: center;
+			font-family: pandub;
+			color: #ff0000;
+		}
+
+		ul.tree-view {
+			display: block;
+			background: rgba(255, 255, 255, 0.1);
+			box-shadow: var(--border-field);
+			padding: 6px;
+			margin: 0;
+			font-family: igari;
+		}
+
+		ul.tree-view li {
+			list-style-type: none;
+		}
+
+		ul.tree-view a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+
+		ul.tree-view a:focus {
+			background-color: var(--dialog-blue);
+			color: var(--button-highlight);
+		}
+
+		ul.tree-view ul,
+		ul.tree-view li {
+			margin-top: 3px;
+		}
+
+		ul.tree-view ul {
+			margin-left: 16px;
+			padding-left: 16px;
+			border-left: 1px dotted #ffffff;
+		}
+
+		ul.tree-view ul>li {
+			position: relative;
+		}
+
+		ul.tree-view ul>li::before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: -16px;
+			top: 6px;
+			width: 12px;
+			border-bottom: 1px dotted #ffffff;
+		}
+
+		ul.tree-view ul>li:last-child::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: -20px;
+			top: 7px;
+			bottom: 0px;
+			width: 8px;
+			background: rgba(255, 255, 255, 0.1);
+		}
+
+		ul.tree-view details {
+			margin-top: 0;
+		}
+
+		ul.tree-view details[open] summary
+        {
+        margin-bottom: 0;
+        }
+        ul.tree-view ul details>summary:before {
+		margin-left: -22px;
+		position: relative;
+		z-index: 1;
+	}
+
+	ul.tree-view details>summary:before {
+		text-align: center;
+		display: block;
+		float: left;
+		content: "+";
+		border: 1px solid #ffffff;
+		width: 8px;
+		height: 9px;
+		line-height: 9px;
+		margin-right: 5px;
+		padding-left: 1px;
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	ul.tree-view details[open]>summary:before {
+		content: "-";
+	}
+
+	summary:focus {
+		outline: 1px dotted #ffffff;
+	}
+
+	details>summary {
+		list-style-type: none;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div class="text">
+			<h1>ABOUT THE SITE</h1>
+			<p>SYNTHETIC is my personal website, born out of a desire to share my interests and passions with the world. Through this platform, I hope to connect with like-minded individuals, document my personal journey, and showcase my creative projects.</p>
+            <p>Visitors to my website can expect to find a variety of content, including blog posts, photos, videos, art, music, and podcasts. I aim to create a unique and immersive experience for each visitor, with a custom design and interactive elements that reflect my personality and values.</p>
+            <p>One of the things that sets my website apart is its focus on a specific niche, which allows me to delve deep into a particular topic and share my expertise with others. I also hope to foster a sense of community among my audience, and encourage engagement and conversation through comments, social media, and other channels.</p>
+            <p>Ultimately, my goal for SYNTHETIC is to use it as a digital extension of myself, a place where I can express myself fully and authentically. I hope to grow my audience, expand into new content areas, and use the platform as a launching pad for future projects. Thank you for visiting, and I hope you enjoy exploring my tiny corner of the internet!</p>
