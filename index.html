@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <html>
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Cheesy Chronicles</title>
+       <link href="/01.css" rel="stylesheet" type="text/css" media="all">
+       <link rel="icon" type="image/png" href="https://neothemes.neocities.org/images/favicon.gif" />
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+       
+   </head>
+   <body class="scroll">
+      <div id="container">
+      <div id="header">
+         <h1 class="title">-- Cheesy Chronicles --</h1>
+         
+      </div>
+      <div id="wrapper">
+         <div id="two-boxes">
+            <div class="box-one scroll">
+               <div class="section-title">
+                  About Me!
+               </div>
+               <div class="content">
+                  <p><strong>Facts About Me!</strong></p>
+                  <ul>
+                     <li>My name is Miles Davis!</li>
+                     <li>I love to code in HTML, CSS, and JS.</li>
+                     <li>I Also make games using Unreal Engine.</li>
+                     <li>I Own a Couple of other Sites</li>
+                     <li>I am the Owner and CEO of Buttered Cheese LLC</li>
+
+                  </ul>
+               </div>
+            </div>
+            <div class="box-two scroll">
+               <div class="section-title">Navigation</div>
+               <div class="nav-wrapper">
+                  <button><a href="/index.html">Home</a></button>
+                  <button><a href="/html/about.html">About Us</a></button>
+               </div>
+            </div>
+         </div>
+         <div id="two-boxes">
+            <div class="box-three scroll">
+               <div class="section-title">Toybox!</div>
+               <div class="content">
+                <center>
+                  <a href="https://anybrowser.org/"><img src="/pictures/buttons/anybrowser2.gif"></a>
+                  <a href="https://web.archive.org/"><img src="/pictures/buttons/aw_icon.gif"></a>
+                  <a href="#"><img src="/pictures/buttons/bestview.gif"></a>
+                  <a href="#"><img src="/pictures/buttons/boot.gif"></a>
+                  <a href="https://www.geocities.ws/"><img src="/pictures/buttons/geocitieswww.gif"></a>
+                  <a href="#" onclick="alert('Blue Screen of Death'); return false;"><img src="/pictures/buttons/getbsod.gif"></a>
+                  <a href="https://www.google.com/"><img src="/pictures/buttons/google_25wht.gif"></a>
+                  <a href="https://outlook.live.com/mail/"><img src="/pictures/buttons/hotmail.gif"></a>
+                  <a href="https://www.learn-html.org/"><img src="/pictures/buttons/html_learn_it_today.gif"></a>
+                  <a href="https://html.com/"><img src="/pictures/buttons/html.gif"></a>
+                  <a href="https://www.linux.org/"><img src="/pictures/buttons/linux_now.gif"></a>
+                  <a href="#" onclick="alert('Install Linux'); return false;"><img src="/pictures/buttons/linuxnow.jpg"></a>
+                  <a href="#"><img src="/pictures/buttons/prod_625_17265.gif"></a>
+                  <a href="#" onclick="alert('Windows 98'); return false;"><img src="/pictures/buttons/win98_89.gif"></a>                  
+                </center>
+               </div>
+            </div>
+               <div class="box-four scroll">
+                  <div class="section-title">Rant of the Day!</a></div>
+                  <div class="content">
+                     <h3><i>Reject H.J. Res. 86: Protecting Internet Privacy and the Future of the Digital Economy</i></h3>
+
+                      <p>In an era where privacy and security are of paramount concern, it's crucial to be aware of the legislative actions that impact our rights online. One such action is the proposed House Joint Resolution 86 (H.J. Res. 86). This resolution aims to reverse the Federal Communications Commission's (FCC) privacy rules for internet service providers (ISPs), which were adopted in 2016. These rules safeguard the online privacy of users and require ISPs to obtain explicit consent before sharing or selling sensitive customer data. It is essential to reject H.J. Res. 86 and protect our internet privacy.</p>
+
+                  </div>
+               </div>
+         </div>
+         
+         <div id="footer">
+            <p>- Cheesy Chronicles -</p>
+            <p>By Miles Davis</p>
+         </div>
+      </div>
+   <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
