@@ -1,118 +1,488 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheesy Chronicles</title>
-    <link href="/01.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/png" href="https://neothemes.neocities.org/images/favicon.gif" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>miss moss</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="A website made by some moss, filled with fun stuff!">
+<meta property="og:image" content="/img/favicon-128x128.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/img/butteredcheeselogo.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/img/butteredcheeselogo.png"/>
+
+    <link rel="stylesheet" href="/css/styleBase.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/Neo98.css"/>
+    <script src="/js/script.js"></script>
+<script src="/js/fakefeedback.js"></script>
+<script>
+  var newVal = "";
+  // This following function isolates the file name and replaces underscores with spaces
+  function createTitle(filename) {
+    newVal = filename.split("/").pop();
+    newVal = newVal.split(".")[0];
+    newVal = newVal.replace(/_/g, ' ');
+    return newVal;
+  }
+</script>
+
+    <script src="/js/cursors/springyEmojiCursor.js"></script>
+    <script src="/js/webring.js"></script>
   </head>
-  <body class="scroll">
-    <div id="container">
-      <div id="header">
-        <h1 class="title neon-text">-- Cheesy Chronicles --</h1>
+
+  <body>
+    <script>
+      createCursor();
+    </script>
+    <header><div class="center">
+  <a href="/"><img class="title" src="/img/butteredcheeselogo.png" height="150"></a>
+</div></header>
+    <main>
+      <div class="left">
+        <div class="sidebar">
+          <section id="left">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">left.html</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeThing('left');"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="hideThing('left');"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          
+
+<div class="center">
+  <nav>
+    <p>Pages</p>
+    <div class="buttons">
+      
+        <a href="/">
+          <button>Home</button>
+        </a>
+
+      <a href="#cbox" target="_top">
+        <button>Feeling lonely?</button>
+      </a>
+    </div>
+
+    <hr>
+
+    <p>Projects</p>
+    <div class="buttons">
+      
+        <a href="https://fellagame.com">
+          <button>Fella</button>
+        </a>
+      
+        
+
+    </div>
+
+    <hr>
+
+    <img src="http://textfiles.com/underconstruction/Nova1466underconstruction.gif">
+
+    <hr>
+
+  </nav>
+  <p>hey! add my button!</p>
+  </a>
+  <textarea>&lt;a href="https://importcheeses.com"&gt;&lt;img src="http://importcheeses.com/img/buttons/cheesec.png"&gt;&lt;/a&gt;</textarea>
+  <br>
+  <br>
+    <img src="/img/buttons/cheesec.png">
+        </div>
       </div>
-      <div id="wrapper">
-        <div id="two-boxes">
-          <div class="box-one scroll">
-            <div class="section-title neon-text">
-              About Me!
-            </div>
-            <div class="content">
-              <p><strong>Facts About Me!</strong></p>
-              <ul>
-                <li>My name is Miles Davis!</li>
-                <li>I love to code in HTML, CSS, and JS.</li>
-                <li>I Also make games using Unreal Engine.</li>
-                <li>I Own a Couple of other Sites</li>
-                <li>I am the Owner and CEO of Buttered Cheese LLC</li>
-              </ul>
-            </div>
-          </div>
-          <div class="box-two scroll">
-            <div class="section-title neon-text">Navigation</div>
-            <div class="nav-wrapper">
-              <button><a href="/index.html">Home</a></button>
-              <button><a href="/html/about.html">About Us</a></button>
-              <button><a href="/html/chat.html">Chat</a></button>
-            </div>
-          </div>
-        </div>
-        <div id="two-boxes">
-          <div class="box-three scroll">
-            <div class="section-title neon-text">Toybox!</div>
-            <div class="content">
-              <center>
-                  <a href="https://anybrowser.org/"><img src="/pictures/buttons/anybrowser2.gif"></a>
-                  <a href="https://web.archive.org/"><img src="/pictures/buttons/aw_icon.gif"></a>
-                  <a href="#"><img src="/pictures/buttons/bestview.gif"></a>
-                  <a href="#"><img src="/pictures/buttons/boot.gif"></a>
-                  <a href="https://www.geocities.ws/"><img src="/pictures/buttons/geocitieswww.gif"></a>
-                  <a href="#" onclick="alert('Blue Screen of Death'); return false;"><img src="/pictures/buttons/getbsod.gif"></a>
-                  <a href="https://www.google.com/"><img src="/pictures/buttons/google_25wht.gif"></a>
-                  <a href="https://outlook.live.com/mail/"><img src="/pictures/buttons/hotmail.gif"></a>
-                  <a href="https://www.learn-html.org/"><img src="/pictures/buttons/html_learn_it_today.gif"></a>
-                  <a href="https://html.com/"><img src="/pictures/buttons/html.gif"></a>
-                  <a href="https://www.linux.org/"><img src="/pictures/buttons/linux_now.gif"></a>
-                  <a href="#" onclick="alert('Install Linux'); return false;"><img src="/pictures/buttons/linuxnow.jpg"></a>
-                  <a href="#"><img src="/pictures/buttons/prod_625_17265.gif"></a>
-                  <a href="#" onclick="alert('Windows 98'); return false;"><img src="/pictures/buttons/win98_89.gif"></a>        
-               </center>
-            </div>
-          </div>
-          <div class="box-four scroll">
-            <div class="section-title neon-text">Rant of the Day!</div>
-            <div class="content">
-              <h3><i>Reject H.J. Res. 86: Protecting Internet Privacy and the Future of the Digital Economy</i></h3>
-              <p>In an era where privacy and security are of paramount concern, it's crucial to be aware of the legislative actions that impact our rights online. One such action is the proposed House Joint Resolution 86 (H.J. Res. 86). This resolution aims to reverse the Federal Communications Commission's (FCC) privacy rules for internet service providers (ISPs), which were adopted in 2016. These rules safeguard the online privacy of users and require ISPs to obtain explicit consent before sharing or selling sensitive customer data. It is essential to reject H.J. Res. 86 and protect our internet privacy.</p>
-            </div>
-          </div>
-        </div>
-        <div id="footer">
-          <p class="neon-text">- Cheesy Chronicles -</p>
-          <p>By Miles Davis</p>
+    </section>
+
+<br>
+  <section id="cbox">
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">cbox.exe</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize" onclick="minimizeThing('cbox');"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close" onclick="hideThing('cbox');"></button>
+      </div>
+    </div>
+    <div class="window-body" style="margin:0;">
+        <iframe src="https://www3.cbox.ws/box/?boxid=3527789&boxtag=uu5Gsa" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	    </div>
+  </div>
+</section>
+
+
         </div>
       </div>
-   </div>
-   <script>
-     // <![CDATA[  <-- For SVG support
-     if ('WebSocket' in window) {
-       (function () {
-         function refreshCSS() {
-           var sheets = [].slice.call(document.getElementsByTagName("link"));
-           var head = document.getElementsByTagName("head")[0];
-           for (var i = 0; i < sheets.length; ++i) {
-             var elem = sheets[i];
-             var parent = elem.parentElement || head;
-             parent.removeChild(elem);
-             var rel = elem.rel;
-             if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-               var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-               elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-             }
-             parent.appendChild(elem);
-           }
-         }
-         var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-         var address = protocol + window.location.host + window.location.pathname + '/ws';
-         var socket = new WebSocket(address);
-         socket.onmessage = function (msg) {
-           if (msg.data == 'reload') window.location.reload();
-           else if (msg.data == 'refreshcss') refreshCSS();
-         };
-         if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-           console.log('Live reload enabled.');
-           sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-         }
-       })();
-     }
-     else {
-       console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-     }
-     // ]]>
-   </script>
+      <div class="middle">
+        
+          <section id="home">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">index.html</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeThing('home');"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="hideThing('home');"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          
+
+<h3>Thanks for stopping by the <i>Cheesy Chronicles</i></h3>
+<p>Enjoy your stay, there is some fun stuff on here.</p>
+<br>
+
+
+<p><b>[<time datetime="2022-03-08">2023-04-29</time>]</b>
+  Redid Everything for like the 6th time!
+</p>
+
+<p><b>[<time datetime="2022-03-08">2023-04-28</time>]</b>
+    Life is fine and dandy!
+  </p>
+
+
+<a href="https://info.flagcounter.com/ZONP"><img src="https://s04.flagcounter.com/map/ZONP/size_s/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
+
+
+        </div>
+      </div>
+    </section>
+
+<br>
+
+<section id="webcollections">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">webcollections.html</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeThing('webcollections');"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="hideThing('webcollections');"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          
+<p>Here's my stamp collection! Hover over a stamp to see who made it.</p>
+
+
+<img src='img/99x56/61_by_hibiiyoo_da7e4fp.png' id='img/99x56/61_by_hibiiyoo_da7e4fp.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/Corrupt Static Stamp by  Sugary-Stardust.gif' id='img/99x56/Corrupt Static Stamp by  Sugary-Stardust.gif' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/EndeRRRRRRRRmen by  stampsnstuff.gif' id='img/99x56/EndeRRRRRRRRmen by  stampsnstuff.gif' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/Meat lover by  prosaix.gif' id='img/99x56/Meat lover by  prosaix.gif' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/Sacrificial Wednesdays Stamp by  Sugary-Stardust.gif' id='img/99x56/Sacrificial Wednesdays Stamp by  Sugary-Stardust.gif' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/Stamp Loading by  Rogue-Ranger.gif' id='img/99x56/Stamp Loading by  Rogue-Ranger.gif' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/TBoI - Eden Stamp by  Judas-la-Carotte.gif' id='img/99x56/TBoI - Eden Stamp by  Judas-la-Carotte.gif' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/Weird pkmn stamp by  eternalsaturn.gif' id='img/99x56/Weird pkmn stamp by  eternalsaturn.gif' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/covfefe_by_yarkariolu_dc8ux09.png' id='img/99x56/covfefe_by_yarkariolu_dc8ux09.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/egg_by_noragumies_daoszp0.png' id='img/99x56/egg_by_noragumies_daoszp0.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/i_m_not_going_to_give_you_that_satisfaction__by_world_hero21_d7zxf0y.png' id='img/99x56/i_m_not_going_to_give_you_that_satisfaction__by_world_hero21_d7zxf0y.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/milk_chocolate_buttons_stamp_by_chocoholicstar_d1kw6di.jpg' id='img/99x56/milk_chocolate_buttons_stamp_by_chocoholicstar_d1kw6di.jpg' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/mmmmmm_chocolate_by_stampsnstuff_d5n025c.png' id='img/99x56/mmmmmm_chocolate_by_stampsnstuff_d5n025c.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/nark_nark_by_catstam_d9ro08p.png' id='img/99x56/nark_nark_by_catstam_d9ro08p.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/oops___i_overlicked_my_stamp__by_spud100_d1012ft.png' id='img/99x56/oops___i_overlicked_my_stamp__by_spud100_d1012ft.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/real_stamp_by_pixelworlds_d7x1dk2.png' id='img/99x56/real_stamp_by_pixelworlds_d7x1dk2.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/stamp___whomst_d_ve_by_arandomvelociraptor_db675gz.png' id='img/99x56/stamp___whomst_d_ve_by_arandomvelociraptor_db675gz.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+<img src='img/99x56/yeet_by_yarkariolu_dcz0b3p.png' id='img/99x56/yeet_by_yarkariolu_dcz0b3p.png' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+
+<p>Blinkies (I only have one for now)</p>
+
+
+<img src='img/150x20/blinkienotfound.gif' id='img/150x20/blinkienotfound.gif' alt='This alt should be replaced.' title='This title should be replaced.'>
+
+
+<p>Look at all these cool bumper stickers! Get your own at <a href="https://www.internetbumperstickers.com">internetbumperstickers.com</a>!</p>
+
+
+<img src='img/250x40/I_put_the_toast.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/cause_think.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/charged_particles.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/every_triangle_pythagoras.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/fail_read.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/fox_news_foxes.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/free_contradictions.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/holy_water.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/homework_coloring.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/how_muchIapologize.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/karma_is_watching.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/kayak.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/latin05.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/look_left.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/mom_says_cool.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/no_trolls.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/nosmoke.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/not_obligated.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/nothing_is_impossible.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/nv_judge.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/oxymoron004.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/oxymoron014.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/oxymoron043.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/oxymoron062.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/pastafarian.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/redundancy.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/sanitized.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/self_esteem.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/self_esteem_deserve.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/speed_of_time.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/u_red_this_wrng.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/vegan_zombies.png' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/web_designer.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/website_exceed.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/witchpark.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/yoga_posers.gif' alt='Internet Bumper Sticker'>
+
+<img src='img/250x40/yoshi.gif' alt='Internet Bumper Sticker'>
+
+
+<script type="text/javascript">
+  
+  document.getElementById('img/99x56/61_by_hibiiyoo_da7e4fp.png').setAttribute("alt", createTitle("img/99x56/61_by_hibiiyoo_da7e4fp.png"));
+  document.getElementById('img/99x56/61_by_hibiiyoo_da7e4fp.png').setAttribute("title", createTitle("img/99x56/61_by_hibiiyoo_da7e4fp.png"));
+  
+  document.getElementById('img/99x56/Corrupt Static Stamp by  Sugary-Stardust.gif').setAttribute("alt", createTitle("img/99x56/Corrupt Static Stamp by  Sugary-Stardust.gif"));
+  document.getElementById('img/99x56/Corrupt Static Stamp by  Sugary-Stardust.gif').setAttribute("title", createTitle("img/99x56/Corrupt Static Stamp by  Sugary-Stardust.gif"));
+  
+  document.getElementById('img/99x56/EndeRRRRRRRRmen by  stampsnstuff.gif').setAttribute("alt", createTitle("img/99x56/EndeRRRRRRRRmen by  stampsnstuff.gif"));
+  document.getElementById('img/99x56/EndeRRRRRRRRmen by  stampsnstuff.gif').setAttribute("title", createTitle("img/99x56/EndeRRRRRRRRmen by  stampsnstuff.gif"));
+  
+  document.getElementById('img/99x56/Meat lover by  prosaix.gif').setAttribute("alt", createTitle("img/99x56/Meat lover by  prosaix.gif"));
+  document.getElementById('img/99x56/Meat lover by  prosaix.gif').setAttribute("title", createTitle("img/99x56/Meat lover by  prosaix.gif"));
+  
+  document.getElementById('img/99x56/Sacrificial Wednesdays Stamp by  Sugary-Stardust.gif').setAttribute("alt", createTitle("img/99x56/Sacrificial Wednesdays Stamp by  Sugary-Stardust.gif"));
+  document.getElementById('img/99x56/Sacrificial Wednesdays Stamp by  Sugary-Stardust.gif').setAttribute("title", createTitle("img/99x56/Sacrificial Wednesdays Stamp by  Sugary-Stardust.gif"));
+  
+  document.getElementById('img/99x56/Stamp Loading by  Rogue-Ranger.gif').setAttribute("alt", createTitle("img/99x56/Stamp Loading by  Rogue-Ranger.gif"));
+  document.getElementById('img/99x56/Stamp Loading by  Rogue-Ranger.gif').setAttribute("title", createTitle("img/99x56/Stamp Loading by  Rogue-Ranger.gif"));
+  
+  document.getElementById('img/99x56/TBoI - Eden Stamp by  Judas-la-Carotte.gif').setAttribute("alt", createTitle("img/99x56/TBoI - Eden Stamp by  Judas-la-Carotte.gif"));
+  document.getElementById('img/99x56/TBoI - Eden Stamp by  Judas-la-Carotte.gif').setAttribute("title", createTitle("img/99x56/TBoI - Eden Stamp by  Judas-la-Carotte.gif"));
+  
+  document.getElementById('img/99x56/Weird pkmn stamp by  eternalsaturn.gif').setAttribute("alt", createTitle("img/99x56/Weird pkmn stamp by  eternalsaturn.gif"));
+  document.getElementById('img/99x56/Weird pkmn stamp by  eternalsaturn.gif').setAttribute("title", createTitle("img/99x56/Weird pkmn stamp by  eternalsaturn.gif"));
+  
+  document.getElementById('img/99x56/covfefe_by_yarkariolu_dc8ux09.png').setAttribute("alt", createTitle("img/99x56/covfefe_by_yarkariolu_dc8ux09.png"));
+  document.getElementById('img/99x56/covfefe_by_yarkariolu_dc8ux09.png').setAttribute("title", createTitle("img/99x56/covfefe_by_yarkariolu_dc8ux09.png"));
+  
+  document.getElementById('img/99x56/egg_by_noragumies_daoszp0.png').setAttribute("alt", createTitle("img/99x56/egg_by_noragumies_daoszp0.png"));
+  document.getElementById('img/99x56/egg_by_noragumies_daoszp0.png').setAttribute("title", createTitle("img/99x56/egg_by_noragumies_daoszp0.png"));
+  
+  document.getElementById('img/99x56/i_m_not_going_to_give_you_that_satisfaction__by_world_hero21_d7zxf0y.png').setAttribute("alt", createTitle("img/99x56/i_m_not_going_to_give_you_that_satisfaction__by_world_hero21_d7zxf0y.png"));
+  document.getElementById('img/99x56/i_m_not_going_to_give_you_that_satisfaction__by_world_hero21_d7zxf0y.png').setAttribute("title", createTitle("img/99x56/i_m_not_going_to_give_you_that_satisfaction__by_world_hero21_d7zxf0y.png"));
+  
+  document.getElementById('img/99x56/milk_chocolate_buttons_stamp_by_chocoholicstar_d1kw6di.jpg').setAttribute("alt", createTitle("img/99x56/milk_chocolate_buttons_stamp_by_chocoholicstar_d1kw6di.jpg"));
+  document.getElementById('img/99x56/milk_chocolate_buttons_stamp_by_chocoholicstar_d1kw6di.jpg').setAttribute("title", createTitle("img/99x56/milk_chocolate_buttons_stamp_by_chocoholicstar_d1kw6di.jpg"));
+  
+  document.getElementById('img/99x56/mmmmmm_chocolate_by_stampsnstuff_d5n025c.png').setAttribute("alt", createTitle("img/99x56/mmmmmm_chocolate_by_stampsnstuff_d5n025c.png"));
+  document.getElementById('img/99x56/mmmmmm_chocolate_by_stampsnstuff_d5n025c.png').setAttribute("title", createTitle("img/99x56/mmmmmm_chocolate_by_stampsnstuff_d5n025c.png"));
+  
+  document.getElementById('img/99x56/nark_nark_by_catstam_d9ro08p.png').setAttribute("alt", createTitle("img/99x56/nark_nark_by_catstam_d9ro08p.png"));
+  document.getElementById('img/99x56/nark_nark_by_catstam_d9ro08p.png').setAttribute("title", createTitle("img/99x56/nark_nark_by_catstam_d9ro08p.png"));
+  
+  document.getElementById('img/99x56/oops___i_overlicked_my_stamp__by_spud100_d1012ft.png').setAttribute("alt", createTitle("img/99x56/oops___i_overlicked_my_stamp__by_spud100_d1012ft.png"));
+  document.getElementById('img/99x56/oops___i_overlicked_my_stamp__by_spud100_d1012ft.png').setAttribute("title", createTitle("img/99x56/oops___i_overlicked_my_stamp__by_spud100_d1012ft.png"));
+  
+  document.getElementById('img/99x56/real_stamp_by_pixelworlds_d7x1dk2.png').setAttribute("alt", createTitle("img/99x56/real_stamp_by_pixelworlds_d7x1dk2.png"));
+  document.getElementById('img/99x56/real_stamp_by_pixelworlds_d7x1dk2.png').setAttribute("title", createTitle("img/99x56/real_stamp_by_pixelworlds_d7x1dk2.png"));
+  
+  document.getElementById('img/99x56/stamp___whomst_d_ve_by_arandomvelociraptor_db675gz.png').setAttribute("alt", createTitle("img/99x56/stamp___whomst_d_ve_by_arandomvelociraptor_db675gz.png"));
+  document.getElementById('img/99x56/stamp___whomst_d_ve_by_arandomvelociraptor_db675gz.png').setAttribute("title", createTitle("img/99x56/stamp___whomst_d_ve_by_arandomvelociraptor_db675gz.png"));
+  
+  document.getElementById('img/99x56/yeet_by_yarkariolu_dcz0b3p.png').setAttribute("alt", createTitle("img/99x56/yeet_by_yarkariolu_dcz0b3p.png"));
+  document.getElementById('img/99x56/yeet_by_yarkariolu_dcz0b3p.png').setAttribute("title", createTitle("img/99x56/yeet_by_yarkariolu_dcz0b3p.png"));
+  
+
+  
+  document.getElementById('img/150x20/blinkienotfound.gif').setAttribute("alt", createTitle("img/150x20/blinkienotfound.gif"));
+  document.getElementById('img/150x20/blinkienotfound.gif').setAttribute("title", createTitle("img/150x20/blinkienotfound.gif"));
+  
+</script>
+
+        </div>
+      </div>
+    </section>
+
+<br>
+
+<section id="feedback">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">feedback.html</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeThing('feedback');"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="hideThing('feedback');"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          
+<DIV align=left><TABLE height=128 cellSpacing=0 cellPadding=0 width=512 border=0><TBODY><TR><TD vAlign=top width=512 height=128><FORM name=myform><P>Give me feedback:</P><P><TEXTAREA onkeypress="return changer()" name=mytext rows=10 wrap=virtual cols=40></TEXTAREA><BR><BR><button onclick=resetit()>Submit Feedback</button></P></FORM></TD></TR></TBODY></TABLE></DIV>
+
+        </div>
+      </div>
+    </section>
+
+<br>
+
+<section id="map">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">map.png</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeThing('map');"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="hideThing('map');"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          
+        </div>
+      </div>
+    </section>
+
+<br>
+
+<section id="udt">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">upside_down.txt</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeThing('udt');"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="hideThing('udt');"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          
+<iframe src="http://www.upsidedowntext.com/widgetF" frameborder="0" width="390px" height="360px"></iframe>
+
+        </div>
+      </div>
+    </section>
+
+        
+      </div>
+      <div class="right">
+        <div class="sidebar">
+          <section id="right">
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">right.html</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeThing('right');"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="hideThing('right');"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          
+
+<div class="marquee-rtl">
+  <span>
+    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/ages-12.svg" alt="Ages: 12+"></a>
+    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/built-by-developers.svg" alt="Built by: Developers"></a>
+    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with: <3"></a>
+    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/cc-nc-sa.svg" alt="Creative Commons: Non-Commercial ShareAlike"></a>
+  </span>
+</div>
+<hr>
+
+
+<p class="rainbow-text">I'm Feeling: Blue, Da Ba Dee, Da Bah Dieeee</p>
+<hr>
+
+<p>Friends:</p>
+<div class="marquee-rtl">
+  <span>
+    <a href="https://www.shishkabob.org/" ><img src="https://www.shishkabob.org/img/buttons/retroretreat.png" alt="shishkabob's retro retreat"></a>
+    <a href="https://fellagame.com/" ><img src="https://www.shishkabob.org/img/buttons/fella.png" ></a>
+ 
+</span>
+</div>
+<hr>
+    <center>
+        <a href="https://anybrowser.org/"><img src="/img/buttons/anybrowser2.gif"></a>
+        <a href="https://web.archive.org/"><img src="/img/buttons/aw_icon.gif"></a>
+        <a href="https://www.bestviewapp.com/"><img src="/img/buttons/bestview.gif"></a>
+        <a href="https://www.boot.com/"><img src="/img/buttons/boot.gif"></a>
+        <a href="https://www.geocities.ws/"><img src="/img/buttons/geocitieswww.gif"></a>
+        <a href="#" onclick="alert('Blue Screen of Death'); return false;"><img src="/img/buttons/getbsod.gif"></a>
+        <a href="https://www.google.com/"><img src="/img/buttons/google_25wht.gif"></a>
+        <a href="https://outlook.live.com/mail/"><img src="/img/buttons/hotmail.gif"></a>
+        <a href="https://www.learn-html.org/"><img src="/img/buttons/html_learn_it_today.gif"></a>
+        <a href="https://html.com/"><img src="/img/buttons/html.gif"></a>
+        <a href="https://www.linux.org/"><img src="/img/buttons/linux_now.gif"></a>
+        <a href="#" onclick="alert('Install Windows'); return false;"><img src="/img/buttons/linuxnow.jpg"></a>
+        <a href="https://www.products.com/"><img src="/img/buttons/prod_625_17265.gif"></a>
+        <a href="#" onclick="alert('Windows 98'); return false;"><img src="/img/buttons/win98_89.gif"></a>        
+    </center>
+</div>
+        </div>
+      </div>
+    </section>
+
+        </div>
+      </div>
+    </main>
+    <footer><div class="center">
+  <a href="https://neocities.org"><img src="/img/neocities.png"></a>
+</div>
+</footer>
   </body>
-</html>
