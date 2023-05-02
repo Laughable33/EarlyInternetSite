@@ -34,8 +34,15 @@
     <script src="/js/cursors/springyEmojiCursor.js"></script>
     <script src="/js/webring.js"></script>
     <!--Google Ads-->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3593472137450047"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3593472137450047" crossorigin="anonymous"></script>
+    <script>
+        function setAndGetVisitorCount() {
+            let count = localStorage.getItem('visitorCount') || 0;
+            count++;
+            localStorage.setItem('visitorCount', count);
+            document.getElementById('visitorCount').textContent = count;
+        }
+    </script>
 </head>
 
 <body>
@@ -76,10 +83,13 @@
                                             <button>Chat</button>
                                         </a>
                                         <a href="http://users.smartgb.com/g/g.php?a=s&i=g19-00826-2f">
-                                            <button>My Guestbook</button>
+                                            <button>Guestbook</button>
                                         </a>
                                         <a href="/html/blog/blogroot.html">
                                             <button>Blog</button>
+                                        </a>
+                                        <a href="/html/photodump.html">
+                                            <button>Photo Dump</button>
                                         </a>
                                     </div>
                                     <hr>

@@ -1,0 +1,161 @@
+body {
+    margin: 3px;
+    padding: 0px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    color: #5f5f5f;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+img {
+    border: 0;
+}
+
+p {
+    padding-top: 0px;
+    padding-bottom: 6px;
+    padding-left: 5px;
+}
+
+h1 {
+    background-image: url("https://i.imgur.com/Rd3qMoY.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 10px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    color: #ffffff;
+}
+
+h2 {
+    background-image: url("https://i.imgur.com/hm9OLTt.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 10px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+a:link {
+    color: #acc4a7;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #ccd5bd;
+    text-decoration: line-through;
+}
+
+table {
+    border: 1px solid #e2e2e2;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+table.unstyledTable {
+    border: 0px solid #FFFFFF;
+}
+
+table.unstyledTable td,
+table.unstyledTable th {
+}
+
+#divbg {
+    background-image: url("https://i.imgur.com/iEYUiys.png");
+    background-repeat: repeat-y;
+    left: 53;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 1;
+}
+
+div.panel {
+    display: none;
+}
+
+div.panel.show {
+    display: block !important;
+}
+
+table.rainbow {
+    border: 1px solid #FFFFFF;
+    width: 900px;
+}
+table.rainbow td,
+table.rainbow th {
+    border: 1px solid #FFFFFF;
+}
+table.rainbow tbody td {
+    font-size: 12px;
+}
+table.rainbow thead {
+    background: #DDDDDD;
+}
+table.rainbow thead th {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+
+table.blueTable {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.blueTable td,
+table.blueTable th {
+    border: 1px solid #FFFFFF;
+    padding: 1px 5px;
+}
+table.blueTable tbody td {
+    font-size: 12px;
+}
+table.blueTable tfoot td {
+    font-size: 12px;
+}
+table.blueTable tfoot .links {
+    text-align: right;
+}
+table.blueTable tfoot .links a {
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+table.blankTable {
+}
+table.blankTable td,
+table.blueTable th {
+}
+table.blankTable tfoot td {
+    font-size: 14px;
+}
+table.blankTable tfoot .links {
+    text-align: right;
+}
+table.blankTable tfoot .links a {
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
