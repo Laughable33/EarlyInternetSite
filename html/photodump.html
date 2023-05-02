@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Photo Dump</title>
-      <link rel="shortcut icon" type="image/x-icon" href="/img/butteredcheeselogo.png">
-      <link rel="stylesheet" href="/css/photodump.css">
-      <style>
-         .centered {
+
+<head>
+    <title>Photo Dump</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/butteredcheeselogo.png">
+    <link rel="stylesheet" href="/css/photodump.css">
+    <style>
+        .centered {
             position: absolute;
             display: flex;
             justify-content: center;
@@ -14,28 +15,25 @@
             left: 0;
             right: 0;
             bottom: 0;
-         }
-      </style>
-      <script>
-         function randomImage() {
-            const images = [
-               'https://source.unsplash.com/random/800x600?trippy art,1',
-               'https://source.unsplash.com/random/800x600?lucid tech,2',
-               'https://source.unsplash.com/random/800x600?lucid,3',
-               'https://source.unsplash.com/random/800x600?trippy,4',
-               'https://source.unsplash.com/random/800x600?trippy nature,5'
-            ];
+        }
+    </style>
+    <script>
+        function randomImage() {
+            const images = ['https://source.unsplash.com/random/800x600?trippy art,1', 'https://source.unsplash.com/random/800x600?lucid tech,2', 'https://source.unsplash.com/random/800x600?lucid,3', 'https://source.unsplash.com/random/800x600?trippy,4', 'https://source.unsplash.com/random/800x600?trippy nature,5'];
             const randomIndex = Math.floor(Math.random() * images.length);
             document.getElementById('randomImage').src = images[randomIndex];
-         }
-      </script>
-   </head>
-   <body onload="randomImage()">
-      <body background="https://sleepysprout.neocities.org/sitegraphics/background.png" bgproperties="fixed" draggable="false">
-         <!-- Add this div where you want the random image to appear -->
-         <div class="centered">
+        }
+    </script>
+</head>
+
+<body onload="randomImage()">
+
+    <body background="https://sleepysprout.neocities.org/sitegraphics/background.png" bgproperties="fixed" draggable="false">
+        <!-- Add this div where you want the random image to appear -->
+        <div class="centered">
             <img id="randomImage" src="" draggable="false" alt="Random Image">
-         </div>
-         <!-- The rest of your code -->
-      </body>
+        </div>
+        <!-- The rest of your code -->
+    </body>
+
 </html>
