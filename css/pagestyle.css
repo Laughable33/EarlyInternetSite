@@ -1,0 +1,389 @@
+:root {
+    --header-image: url('https://ghostingpen.neocities.org/photos/1e88867648daf3e05353612d9a2cb901.png');
+    --body-bg-image: url('');
+    /* colors */
+    --content: #43256E;
+}
+
+@font-face {
+    font-family: Pixel Operator;
+    src: url('https://ghostingpen.neocities.org/fonts/PixelOperator.ttf');
+}
+
+@font-face {
+    font-family: Pixel Operator;
+    src: url('https://ghostingpen.neocities.org/fonts/PixelOperator-Bold.ttf');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Pixel Operator', sans-serif;
+    margin: 0;
+    background-color: #000000;
+    /* you can delete the line below if you'd prefer to not use an image */
+    background-size: 500px;
+    color: #ffffff;
+    background-image: var(--body-bg-image);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* below this line is CSS for the layout */
+/* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+#container {
+    max-width: 900px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+/* the area below is for all links on your page
+    EXCEPT for the navigation */
+#container a {
+    color: #d82b2b;
+    font-weight: bold;
+    /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+}
+
+#container a:hover {
+    color: #FFFF00;
+    font-weight: bold;
+    /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+}
+
+#header {
+    width: 100%;
+    background-color: #000000;
+    /* header color here! */
+    height: 150px;
+    /* this is only for a background image! */
+    /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+    background-image: var(--header-image);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* navigation section!! */
+#navbar {
+    height: 60px;
+    background-color: #000000;
+    /* navbar color */
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 10px;
+    margin: 25px;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+}
+
+/* navigation links*/
+#navbar li a {
+    color: #ff7124;
+    /* navbar text color */
+    font-weight: 800;
+    text-decoration: none;
+    outline: solid;
+    outline-offset: 5px;
+    outline-color: #ff7124;
+    /* this removes the underline */
+}
+
+/* navigation link when a link is hovered over */
+#navbar li a:hover {
+    color: #FFFF00;
+    text-decoration: underline;
+    outline: solid;
+    outline-offset: 5px;
+    outline-color: #ffff00;
+}
+
+#flex {
+    display: flex;
+}
+
+/* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+aside {
+    background-color: #000000;
+    width: 200px;
+    padding: 20px;
+    outline: solid;
+    outline-color: #ffffff;
+    /* this makes the sidebar text slightly smaller */
+}
+
+/* this is the color of the main content area,
+    between the sidebars! */
+main {
+    background-color: #000000;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    outline: solid;
+    outline-color: #ffffff;
+}
+
+/* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+*/ #leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
+}
+
+footer {
+    background-color: #000000;
+    /* background color for footer */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    outline: solid;
+    outline-color: #ffffff;
+    /* this centers the footer text */
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+strong {
+    /* this styles bold text */
+    color: #ffffff;
+}
+
+/* this is just a cool box, it's the darker colored one */
+.box {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box2 {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    width: 50%;
+    height: 230px;
+    float: left;
+}
+
+.box3 {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    height: 250px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* CSS for extras */
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #13092D;
+}
+
+pre {
+    display: block;
+    background-color: gray;
+    border: 2px solid #ffffff;
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    overflow-y: scroll;
+    margin: 1em 0;
+    max-width: 200px
+}
+
+#statuscafe {
+    padding: .5em;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+#musicplayer {
+    background: black;
+    /* background color of player */
+    border: 1px solid #ffffff;
+    /* border around player */
+    width: 160px;
+    /* width of the player */
+    color: white;
+}
+
+.songtitle {
+    padding: 5px;
+    /* padding around song title */
+    border-bottom: 2px solid #ffffff;
+    /* border under song title */
+    display: block;
+}
+
+.controls {
+    font-size: 18px !important;
+    background-color: #000000;
+    text-align: center;
+    width: 100%;
+    }
+    
+    .controls td {
+    padding: 8px 5px 0px 5px;
+    }
+    
+    .seeking {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    }
+    
+    .current-time {
+    padding-right: 5px;
+    }
+    
+    .total-duration {
+    padding-left: 5px;
+    }
+    
+    i.fas:hover {
+    cursor: help;
+    }
+    
+    i.fas.fa-pause,
+    i.fas.fa-play,
+    i.fas.fa-forward,
+    i.fas.fa-backward {
+    color: #ffffff;
+    }
+    
+    input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: #000000;
+    }
+    
+    input[type=range]:focus {
+    outline: none;
+    }
+    
+    /* settings for chrome browsers */
+    input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: help;
+    background: #000000;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 10px;
+    border-radius: 0px;
+    background: #000000;
+    cursor: help;
+    -webkit-appearance: none;
+    margin-top: -4.5px;
+    }
+    
+    /* settings for firefox browsers */
+    input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: help;
+    background: #000000;
+    }
+    
+    input[type=range]::-moz-range-thumb {
+    height: 10px;
+    width: 10px;
+    border-radius: 0px;
+    background: #000000;
+    cursor: help;
+    border: none;
+    }
+    
+    /* BELOW THIS POINT IS MEDIA QUERY */
+    @media only screen and (max-width: 800px) {
+    #flex {
+    flex-wrap: wrap;
+    }
+    aside {
+        width: 100%;
+    }
+    
+    main {
+        order: 1;
+    }
+    
+    #leftSidebar {
+        order: 2;
+    }
+    
+    #rightSidebar {
+        order: 3;
+    }
+    
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}    

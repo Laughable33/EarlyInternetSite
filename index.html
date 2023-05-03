@@ -1,299 +1,181 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Page title -->
-    <title>Cheesy Chronicles</title>
-    <!-- Basic meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A website made by Miles Davis filled with fun stuff ;] ">
-    <meta property="og:image" content="/img/butteredcheeselogo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/butteredcheeselogo.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/butteredcheeselogo.png" />
-    <!-- CSS styles -->
-    <link rel="stylesheet" href="/css/styleBase.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/Neo98.css" />
-    <!-- JavaScript files -->
-    <script src="/js/script.js"></script>
-    <script src="/js/fakefeedback.js"></script>
-    <script>
-        var newVal = "";
-        // This function isolates the file name and replaces underscores with spaces
-        function createTitle(filename) {
-            newVal = filename.split("/").pop();
-            newVal = newVal.split(".")[0];
-            newVal = newVal.replace(/_/g, ' ');
-            return newVal;
-        }
-    </script>
-    <!-- Additional JavaScript files -->
-    <script src="/js/cursors/springyEmojiCursor.js"></script>
-    <script src="/js/webring.js"></script>
-    <script>
-        function setAndGetVisitorCount() {
-            let count = localStorage.getItem('visitorCount') || 0;
-            count++;
-            localStorage.setItem('visitorCount', count);
-            document.getElementById('visitorCount').textContent = count;
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>* GHOSTING PEN</title>
+    <link href="/css/pagestyle.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Initialize cursor -->
-    <script>
-        createCursor();
-    </script>
-    <!-- Header -->
-    <header>
-        <div class="center">
-            <a href="/"><img class="title" src="/img/butteredcheeselogo.png" height="150"></a>
-        </div>
-    </header>
-    <main>
-        <!-- Left sidebar -->
-        <div class="left">
-            <div class="sidebar">
-                <!-- Left window -->
-                <section id="left">
-                    <div class="window">
-                        <div class="title-bar">
-                            <div class="title-bar-text">left.html</div>
-                            <div class="title-bar-controls">
-                                <button aria-label="Minimize" onclick="minimizeThing('left');"></button>
-                                <button aria-label="Maximize"></button>
-                                <button aria-label="Close" onclick="hideThing('left');"></button>
-                            </div>
+    <div id="container">
+        <a href="/">
+            <div id="header"></div>
+        </a>
+        <div id="flex">
+            <aside id="leftSidebar" style="margin-right: 0px;">
+                <h2>
+                    <center>CHANGELOG</center>
+                </h2>
+                <div class="box">
+                    <p>Last Updated: <span id="lastupdate"></span></p>
+                    <ul style="padding-left:20px;">
+                        <li>4/12/23 - <a href="https://ghostingpen.neocities.org/cosplay/perfhistory">convention performance history</a> updated for 2023!</li>
+                        <li>3/29/23 - <a href="https://ghostingpen.neocities.org/fiction/fanficprojects">new fic</a> added to my fanfiction page!</li>
+                        <li>3/02/23 - got added to self-insert webring!</li>
+                    </ul>
+                </div>
+                <p></p>
+                <h2>
+                    <center>RESOURCES</center>
+                </h2>
+                <div class="box">
+                    <ul style="padding-left:20px;">
+                        <li><a href="/writing/">FICTION WRITING</a></li>
+                        <li><a href="/journaling/">JOURNALING</a></li>
+                        <li><a href="/pocket/">SAVED ARTICLES</a></li>
+                        <li><a href="/links/">LINK DIRECTORY</a></li>
+                    </ul>
+                </div>
+                <center>
+                    <h2>CONTACT ME</h2>
+                </center>
+                <div class="box">
+                    <a href="https://ghostingpen.tumblr.com/">TUMBLR</a>
+                    <br>
+                    <b>EMAIL:</b> thevictorblair [AT] gmail.com <br>
+                    <b>DISCORD:</b> GhostingPen#5597
+                </div>
+                <p><img src="https://ghostingpen.neocities.org/photos/deconapstablook.png" style="max-width:100%;
+max-height:100%;"></p>
+            </aside>
+            <main>
+                <h1>welcome to ghosting pen....</h1>
+                <p>* hi and welcome to <b>ghosting pen</b>, my own little corner of the internet!</p>
+                <p>* this is my means of escape from social media and the overwhelming vastness that is the current internet</p>
+                <p>* it will contain recommendations of media i enjoy, access to helpful resources i frequent, and more things that i love and want to share with the public. i love talking about the things i love, and this is my way of expressing myself and being able to do that</p>
+                <p>* this website is best viewed on a computer or tablet, and it may not display as well on mobile! my deepest apologies</p>
+                <p>* i hope you have fun with it! it's currently UNDER CONSTRUCTION, so bear with me as i build this website bit by bit!</p>
+                <p>
+                    <center><a href="https://neocities.org/site/ghostingpen"><img src="https://ghostingpen.neocities.org/photos/B1FED66E-E129-46AD-BAC7-49398F2107B3.gif" width=88px height=34px></a> <a href="https://neocities.org/"><img src="https://ghostingpen.neocities.org/photos/deletetwitter.gif" width=88px height=34px></a> <a href="https://neocities.org/tutorials"><img src="https://ghostingpen.neocities.org/photos/pinkneocities.jpg" width=88px height=34px></a></center>
+                </p>
+                <h2>WEBRINGS</h2>
+                <div class="box3" style="overflow-y:scroll">
+                    <center>
+                        <script src="https://dokodemo.neocities.org/pokering/pokering.js"></script>
+                        <pokering-script site="https://ghostingpen.neocities.org"></pokering-script>
+                        <p>
+                        <div id="autiring">
+                            <script type="text/javascript" src="https://macaque.neocities.org/autiring/onionring-variables.js"></script>
+                            <script type="text/javascript" src="https://macaque.neocities.org/autiring/onionring-widget.js"></script>
                         </div>
-                        <div class="window-body">
-                            <div class="center">
-                                <nav>
-                                    <p>Pages</p>
-                                    <div class="buttons">
-                                        <a href="/">
-                                            <button>Home</button>
-                                        </a>
-                                        <a href="#cbox" target="_top">
-                                            <button>Chat</button>
-                                        </a>
-                                        <a href="http://users.smartgb.com/g/g.php?a=s&i=g19-00826-2f">
-                                            <button>Guestbook</button>
-                                        </a>
-                                        <a href="/html/blog/blogroot.html">
-                                            <button>Blog</button>
-                                        </a>
-                                        <a href="/html/photodump.html">
-                                            <button>Photo Dump</button>
-                                        </a>
-                                        <a href="/html/games/games.html">
-                                            <button>Games</button>
-                                        </a>
-                                    </div>
-                                    <hr>
-                                    <p>Projects</p>
-                                    <div class="buttons">
-                                        <a href="https://fellagame.com">
-                                            <button>Fella</button>
-                                        </a>
-                                    </div>
-                                    <hr>
+                        </p>
+                        <p>
+                        <div id='ahsc'>
+                            <script type="text/javascript" src="https://feelingmachine.moe/alterring/onionring-variables.js"></script>
+                            <script type="text/javascript" src="https://feelingmachine.moe/alterring/onionring-widget.js"></script>
+                            <link rel="stylesheet" href="https://feelingmachine.moe/alterring/onionring.css">
+                        </div>
+                        </p>
+                        <p>
+                            <!--START OF SELF INSERT WEBRING-->
+                        <div id="selfinsertwebring">
+                            <script src="https://koinuko.neocities.org/shipping/webring/tryitscript.js"></script>
 
-
-                                </a>
-                                <textarea>&lt;a href="https://importcheeses.com"&gt;&lt;img src="http://importcheeses.com/img/buttons/cheesec.png"&gt;&lt;/a&gt;</textarea>
-                                <br>
-                                <br>
-                                <img src="/img/buttons/cheesec.png">
-                                <hr>
-                            </div>
+                            <body onload="setListNumber(), myFunction()" />
+                            <!--IN THE SECTION BELOW, PLEASE CHANGE THE 0 (ZERO) TO WHATEVER-->
+                            <!--NUMBER YOU WERE ASSIGNED! THANK YOU!  <3-->
+                            <script>
+                                function setListNumber() {
+                                    positionInList = 274
+                                };
+                            </script>
                         </div>
-                </section>
-                <br>
-                <section id="cbox">
-                    <div class="window">
-                        <div class="title-bar">
-                            <div class="title-bar-text">cbox.exe</div>
-                            <div class="title-bar-controls">
-                                <button aria-label="Minimize" onclick="minimizeThing('cbox');"></button>
-                                <button aria-label="Maximize"></button>
-                                <button aria-label="Close" onclick="hideThing('cbox');"></button>
-                            </div>
-                        </div>
-                        <div class="window-body" style="margin:0;">
-                            <iframe src="https://www3.cbox.ws/box/?boxid=3527789&boxtag=uu5Gsa" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div class="middle">
-            <section id="home">
-                <div class="window">
-                    <div class="title-bar">
-                        <div class="title-bar-text">index.html</div>
-                        <div class="title-bar-controls">
-                            <button aria-label="Minimize" onclick="minimizeThing('home');"></button>
-                            <button aria-label="Maximize"></button>
-                            <button aria-label="Close" onclick="hideThing('home');"></button>
-                        </div>
-                    </div>
-                    <div class="window-body">
-                        <h3>Thanks for stopping by the <i>Cheesy Chronicles</i></h3>
-                        <p>Enjoy your stay, there is some fun stuff on here.</p>
-                        <br>
-                        <img src="https://img.shields.io/github/commit-activity/w/Laughable33/EarlyInternetSite" alt="50 Commits">
-                        <img src="https://img.shields.io/github/last-commit/Laughable33/EarlyInternetSite" alt="Last Updated Today">
-                        <h4>Changelog</h4>
-                        <p><b>[<time datetime="2022-03-08">2023-05-02</time>]</b> Added a Games page and a few games!</p>
-                        <p><b>[<time datetime="2022-03-08">2023-05-02</time>]</b> Google denied my ad request.</p>
-                        <p><b>[<time datetime="2022-03-08">2023-05-01</time>]</b> Added a Photo Dump page.</p>
-                        <p><b>[<time datetime="2022-03-08">2023-05-01</time>]</b> Made a somewhat decent looking blog!</p>
-                        <p><b>[<time datetime="2022-03-08">2023-05-01</time>]</b> Mabye Google might put ads on here?</p>
-                        <p><b>[<time datetime="2022-03-08">2023-04-30</time>]</b> Made a very horrible looking Blog, Please don't look at it. </p>
-                        <p><b>[<time datetime="2022-03-08">2023-04-30</time>]</b> Updated the Cheesy Chronicles Button. </p>
-                        <p><b>[<time datetime="2022-03-08">2023-04-29</time>]</b> Added more Buttons and Logos and stuff of the sort! </p>
-                        <p><b>[<time datetime="2022-03-08">2023-04-29</time>]</b> Added the Github Stuff. </p>
-                        <p><b>[<time datetime="2022-03-08">2023-04-29</time>]</b> Redid Everything for like the 6th time! </p>
-                        <p><b>[<time datetime="2022-03-08">2023-04-28</time>]</b> Life is fine and dandy! </p>
-                    </div>
+                        <!--END OF SELF INSERT WEBRING-->
+                        </p>
+                    </center>
                 </div>
-            </section>
-            <br>
-            <br>
-            <section id="feedback">
-                <div class="window">
-                    <div class="title-bar">
-                        <div class="title-bar-text">feedback.html</div>
-                        <div class="title-bar-controls">
-                            <button aria-label="Minimize" onclick="minimizeThing('feedback');"></button>
-                            <button aria-label="Maximize"></button>
-                            <button aria-label="Close" onclick="hideThing('feedback');"></button>
-                        </div>
-                    </div>
-                    <div class="window-body">
-                        <DIV align=left>
-                            <TABLE height=128 cellSpacing=0 cellPadding=0 width=512 border=0>
-                                <TBODY>
-                                    <TR>
-                                        <TD vAlign=top width=512 height=128>
-                                            <FORM name=myform>
-                                                <P>Give me feedback:</P>
-                                                <P><TEXTAREA onkeypress="return changer()" name=mytext rows=10 wrap=virtual cols=40></TEXTAREA><BR><BR><button onclick=resetit()>Submit Feedback</button></P>
-                                            </FORM>
-                                        </TD>
-                                    </TR>
-                                </TBODY>
-                            </TABLE>
-                        </DIV>
-                    </div>
+                <P></P>
+                <div class="box2" style="overflow-y:scroll">
+                    <h2>CURRENTLY...</h2>
+                    <ul>
+                        <li><b>currently watching</b>: fruits basket (rewatch)</li>
+                        <li><b>currently reading</b>: alice in borderland</li>
+                        <li><b>currently working on</b>: fanfiction</li>
+                        <li><b>next convention</b>: portcon maine</li>
+                    </ul>
                 </div>
-            </section>
-            <br>
-            <br>
-            <section id="udt">
-                <div class="window">
-                    <div class="title-bar">
-                        <div class="title-bar-text">upside_down.txt</div>
-                        <div class="title-bar-controls">
-                            <button aria-label="Minimize" onclick="minimizeThing('udt');"></button>
-                            <button aria-label="Maximize"></button>
-                            <button aria-label="Close" onclick="hideThing('udt');"></button>
-                        </div>
-                    </div>
-                    <div class="window-body">
-                        <iframe src="http://www.upsidedowntext.com/widgetF" frameborder="0" width="390px" height="360px"></iframe>
-                    </div>
+                <div class="box2" style="overflow-y:scroll">
+                    <h2>TO-DO LIST</h2>
+                    <ul>
+                        <li>make remaining journaling pages <ul>
+                                <li>beginner's tips</li>
+                                <li>how i journal</li>
+                            </ul>
+                        </li>
+                        <li>make remaining writing resource pages <ul>
+                                <li>current writing process</li>
+                                <li>ode to nanowrimo</li>
+                                <li>general tips</li>
+                            </ul>
+                        </li>
+                        <li>write blog entry re: 2023 techo kaigi</li>
+                        <li>update cosplay goals</li>
+                        <li>undertale / deltarune shrine</li>
+                    </ul>
                 </div>
-            </section>
+            </main>
+            <aside id="rightSidebar" style="margin-left: 0px;">
+                <h2>
+                    <center>FOR YOU</center>
+                </h2>
+                <div class="box">
+                    <ul style="padding-left:20px;">
+                        <li><a href="/manga/">MANGA LIBRARY</a></li>
+                        <li><a href="/games/">GAME CABINET</a></li>
+                        <li><a href="/books/">BOOKSHELF</a></li>
+                        <li><a href="/stationery/">STATIONERY DRAWER</a></li>
+                    </ul>
+                </div>
+                <h2>
+                    <center>SIGN MY GUESTBOOK!</center>
+                </h2>
+                <p>
+                    <iframe src="https://www3.cbox.ws/box/?boxid=3522768&boxtag=WZL6HG" width="100%" height="250" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+                </p>
+                <h2>
+                    <center>STATUS</center>
+                </h2>
+                <div id="statuscafe">
+                    <div id="statuscafe-username"></div>
+                    <div id="statuscafe-content"></div>
+                </div>
+                <script src="https://status.cafe/current-status.js?name=ghostingpen" defer></script>
+                <h2>
+                    <center>LINK ME</center>
+                </h2>
+                <center><a href="https://ghostingpen.neocities.org/"><img src="https://ghostingpen.neocities.org/photos/button.gif"></a></center>
+                <p>
+                    <center>
+                        <pre>&lt;a href="https://ghostingpen.neocities.org/"&gt;&lt;img src=""&gt;&lt;/a&gt;</pre>
+                    </center>
+                </p>
+                <p>
+                    <center>( please no hotlinking! )</center>
+                </p>
         </div>
-        <div class="right">
-            <div class="sidebar">
-                <section id="right">
-                    <div class="window">
-                        <div class="title-bar">
-                            <div class="title-bar-text">right.html</div>
-                            <div class="title-bar-controls">
-                                <button aria-label="Minimize" onclick="minimizeThing('right');"></button>
-                                <button aria-label="Maximize"></button>
-                                <button aria-label="Close" onclick="hideThing('right');"></button>
-                            </div>
-                        </div>
-                        <div class="window-body">
-                            <div class="marquee-rtl">
-                                <span>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/made-with-crayons.svg" alt="Made with Crayons"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/built-with-grammas-recipe.svg" alt="Built with Grandma's Recipe"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/gluten-free.svg" alt="Gluten Free"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/compatibility-club-penguin.svg" alt="Compatible with Club Penguin"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/designed-in-etch-a-sketch.svg" alt="Designed in Etch-A-Sketch"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/fo-sho.svg" alt="Fo Sho!"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/powered-by-black-magic.svg" alt="Powered by Black Magic"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/uses-html.svg" alt="Uses HTML"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg" alt="60% of the Time, Works Every Time"></a>
-                                    <a href="https://forthebadge.com" target="_top"><img src="https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg" alt="ctrl-c-ctrl-v"></a>
-                                </span>
-                            </div>
-                            <hr>
-                            <p class="rainbow-text">I'm Feeling: Blue, Da Ba Dee, Da Bah Dieeee</p>
-                            <hr>
-                            <p>Friends:</p>
-                            <div class="marquee-rtl">
-                                <span>
-                                    <a href="https://www.shishkabob.org/"><img src="/img/buttons/friends/retroretreat.png" alt="shishkabob's retro retreat"></a>
-                                    <a href="https://fellagame.com/"><img src="/img/buttons/friends/fella.png"></a>
-                                    <a href="https://butteredcheese.org/"><img src="/img/buttons/friends/butteredcheese.png"></a>
-                                    <a href="https://mongotomsbadasswebsite.com/"><img src="/img/buttons/friends/mongotom.png"></a>
-                                </span>
-                            </div>
-                            <hr>
-                            <center>
-                                <a href="https://anybrowser.org/"><img src="/img/buttons/anybrowser2.gif"></a>
-                                <a href="https://web.archive.org/"><img src="/img/buttons/aw_icon.gif"></a>
-                                <a href="https://www.bestviewapp.com/"><img src="/img/buttons/bestview.gif"></a>
-                                <a href="https://www.boot.com/"><img src="/img/buttons/boot.gif"></a>
-                                <a href="https://www.geocities.ws/"><img src="/img/buttons/geocitieswww.gif"></a>
-                                <a href="http://fakebsod.com/windows-8-and-10"><img src="/img/buttons/getbsod.gif"></a>
-                                <a href="https://www.google.com/"><img src="/img/buttons/google_25wht.gif"></a>
-                                <a href="https://outlook.live.com/mail/"><img src="/img/buttons/hotmail.gif"></a>
-                                <a href="https://www.learn-html.org/"><img src="/img/buttons/html_learn_it_today.gif"></a>
-                                <a href="https://html.com/"><img src="/img/buttons/html.gif"></a>
-                                <a href="https://www.linux.org/"><img src="/img/buttons/linux_now.gif"></a>
-                                <a href="#" onclick="alert('Install Windows'); return false;"><img src="/img/buttons/linuxnow.jpg"></a>
-                                <a href="https://www.products.com/"><img src="/img/buttons/prod_625_17265.gif"></a>
-                                <a href="#" onclick="alert('Windows 98'); return false;"><img src="/img/buttons/win98_89.gif"></a>
-                                <a href="#"><img src="/img/buttons/apocalypse_now.gif" onclick="alert('I love the smell of napalm in the morning.'); return false;"></a>
-                                <a href="#"><img src="/img/buttons/cres_now.gif" onclick="alert('CresNow - Global and local news in real time.'); return false;"></a>
-                                <a href="https://www.yahoo.com/mail"><img src="/img/buttons/yahoomail.gif"></a>
-                                <a href="#"><img src="/img/buttons/written-in-vi.gif" onclick="alert('This document was written in vi.'); return false;"></a>
-                                <a href="https://www.nescenter.com/"><img src="/img/buttons/nescenter.gif"></a>
-                                <a href="#"><img src="/img/buttons/built_with_microsoft_notepad.gif" onclick="alert('This page was built with Microsoft Notepad.'); return false;"></a>
-                                <a href="#"><img src="/img/buttons/emulate.gif" onclick="alert('Emulate the Future!'); return false;"></a>
-                                <a href="https://www.mozilla.org/"><img src="/img/buttons/getmozilla2.gif"></a>
-                                <a href="#"><img src="/img/buttons/channel.gif" onclick="alert('Please subscribe to my channel!'); return false;"></a>
-                                <a href="#"><img src="/img/buttons/candy.gif" onclick="alert('Life is short, eat candy!'); return false;"></a>
-                                <a href="#"><img src="/img/buttons/th_snd1.gif" onclick="alert('That was easy!'); return false;"></a>
-                                <a href="#"><img src="/img/buttons/no.gif" onclick="alert('Just say no!'); return false;"></a>
-                                <a href="https://www.java.com/en/"><img src="/img/buttons/javanow.gif"></a>
-                                <a href="http://www.smartgb.com" target="_blank"><img alt="Free Guestbook" border="0" src="http://extras.smartgb.com/b/logo3_88_31.gif" width="88" height="31"></a><br>
-                                <a href="https://github.com"><img src="/img/buttons/github.png"></a>
-                                <a href="https://www.mozilla.org/en-US/firefox/new"><img src="https://shishkabob.org/img/buttons/chrmevil.gif"></a>
-                                <img src="https://spyware.neocities.org/images/discord-no-way-2.gif"></a>
-                                <a href="https://spyware.neocities.org/"><img src="https://spyware.neocities.org/images/activelink.png"></a>
-                            </center>
-                        </div>
-                    </div>
-            </div>
-            </section>
-        </div>
-        </div>
-    </main>
-    <footer>
-        <div class="center">
-            <a href="https://neocities.org"><img src="/img/neocities.png"></a>
-        </div>
-    </footer>
+        </aside>
+        <nav id="navbar">
+            <ul>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/blog">BLOG</a></li>
+                <li><a href="/fiction/">FICTION</a></li>
+                <li><a href="/cosplay/">COSPLAY</a></li>
+                <li><a href="/sitemap">SITEMAP</a></li>
+            </ul>
+        </nav>
 </body>
+
+</html>
