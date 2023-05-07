@@ -1,0 +1,119 @@
+html {
+  background-color: #ccc;
+  background: url(/img/clouds2.png) no-repeat center center fixed;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+.box2 {
+  background-color: rgba(255, 255, 255, 0.97);
+  max-width: 550px;
+  margin: 34px auto;
+  padding: 26px;
+  box-shadow: 1px 1px 7px 2px #494949;
+  border-radius: 10px;
+}
+
+.head1 {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.box3 {
+  background: #ffe5ad;
+  background: -webkit-linear-gradient(top, #ffe5ad 0%, #ffd989 100%);
+  background: linear-gradient(to bottom, #ffe5ad 0%, #ffd989 100%);
+  border: 1px solid #F7C96C;
+  max-width: 450px;
+  margin: 34px;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+form {
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: solid 1px #000;
+  outline: 0;
+  font-size: 16px;
+  width: 360px;
+  padding: 12px;
+  text-align: center;
+  margin: 5px 0;
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+button,
+input[type="submit"] {
+  background-color: #D3D2D2;
+  background: linear-gradient(to bottom, #F6F6F6 0%, #E5E5E5 50%, #D3D2D2 50%, #B0ACAC 100%);
+  display: inline-block;
+  border-radius: 7px;
+  border: 1px solid #868686;
+  color: #000066;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 13px 26px;
+  width: 330px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+button:active,
+input[type="submit"]:active {
+  position: relative;
+  top: 1px;
+}
+
+.inbox {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #ffffff;
+  color: #50462d;
+}
+
+.footer {
+  color: #333;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11px;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+  margin: 15px;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+@media only screen and (max-device-width: 600px),
+screen and (max-width: 600px) {
+  .box3 {
+    margin: 34px auto;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 90%;
+  }
+
+  button,
+  input[type="submit"] {
+    width: 80%;
+  }
+  ul {
+    text-align: left;
+  }
+  
+}

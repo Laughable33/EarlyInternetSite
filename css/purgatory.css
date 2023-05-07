@@ -1,0 +1,417 @@
+.body {
+  background-image: url('/newlayout/stars6.webp');
+  font-family: basiic;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  cursor: url(â€˜assets/cursors.pngâ€™), auto;
+  color: #cdcdcd;
+}
+
+.container {
+  margin: auto;
+  max-width: 1885px;
+}
+
+.main1 {
+  text-align: center;
+  padding: 5px;
+  font-family: basiic;
+  color: #cdcdcd;
+  width: 800px;
+  height: 2120px;
+  position: relative;
+  margin: auto;
+  margin-top: 60px
+}
+
+.sidebar-left {
+  width: 220px;
+  z-index: 99;
+  text-align: left;
+  font-family: basiic;
+  color: #cdcdcd;
+  font-size: 16px;
+  position: absolute;
+  margin-left: 380px;
+  margin-top: -2px;
+  height: 800px;
+  flex-direction: column;
+}
+
+.div {
+  width: 220px;
+  height: fit-content;
+  font-family: basiic;
+  color: #cdcdcd;
+  background-color: #141414;
+  font-size: 16px;
+  border: 2px solid #3F3F3F;
+  border-radius: 4px;
+  margin-left: -80px;
+  padding: 7px;
+  margin-top: 7px;
+}
+
+.sidebar-left p {
+  background-color: #141414;
+  padding: 5px;
+  font-family: basiic;
+  color: #cdcdcd;
+  width: 220px;
+  height: 20px;
+  position: relative;
+  margin: auto;
+  margin-left: -3px;
+}
+
+.sidebar-left a {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+
+.welcome {
+  background-color: #141414;
+  border: 2px solid #3F3F3F;
+  border-radius: 4px;
+  padding: 7px;
+  font-family: basiic;
+  text-align: center;
+  color: #cdcdcd;
+  width: 772px;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+#td {
+  width: 220px;
+  vertical-align: baseline;
+  border-spacing: 5px
+}
+
+.updates {
+  background-color: #7a4ea6;
+  padding: 5px;
+  color: #cdcdcd;
+  width: 600px;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+}
+
+#update {
+  background-color: #141414;
+  padding: 5px;
+  font-family: basiic;
+  color: #cdcdcd;
+  width: 550px;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 250px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  gap: 5px 5px;
+  height: 200px;
+}
+
+.grid-div {
+  background-color: #141414;
+  border: 2px solid #3F3F3F;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 16px;
+  width: 220;
+  height: 200;
+  text-align: center
+}
+
+.box h1,
+.box h2,
+.box h3,
+.box h4 {
+  background: #141414;
+  margin: 0;
+  padding: 0.35em 0.25em 0.3em 0.25em;
+  text-align: center;
+  font-family: basiic;
+  font-size: 1.300em;
+  color: #cdcdcd;
+  position: relative;
+}
+
+#statuscafe {
+  padding: 6px;
+  background-color: #141414;
+}
+
+#statuscafe-username {
+  margin-bottom: .5em;
+}
+
+#statuscafe-content {
+  margin: 0 1em 0.5em 1em;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 400;
+  opacity: 0.8;
+  pointer-events: none;
+  opacity: 1;
+  z-index: 450;
+}
+
+.noise:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://ice-creme.de/images/background-noise.png');
+  pointer-events: none;
+  will-change: background-position;
+  animation: noise 1s infinite alternate;
+}
+
+.lines {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 300;
+  opacity: 0.6;
+  will-change: opacity;
+  animation: opacity 3s linear infinite;
+}
+
+.lines:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+  background-size: 100% 4px;
+  will-change: background, background-size;
+  animation: scanlines 0.2s linear infinite;
+}
+
+.main {}
+
+.main .noise:before {
+  background-size: 170%;
+}
+
+.main .vhs {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  will-change: text-shadow;
+  animation: rgbText 2s steps(9) 0s infinite alternate;
+}
+
+.main .vhs .char {
+  will-change: opacity;
+  animation: type 1.2s infinite alternate;
+  animation-delay: calc(60ms * var(--char-index));
+}
+
+.main .time {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  will-change: text-shadow;
+  animation: rgbText 1s steps(9) 0s infinite alternate;
+}
+
+.main .glitchtext {
+  will-change: text-shadow;
+  animation: rgbText 1s steps(9) 0s infinite alternate;
+}
+
+@keyframes noise {
+
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  10% {
+    background-position: -5% -10%;
+  }
+
+  20% {
+    background-position: -15% 5%;
+  }
+
+  30% {
+    background-position: 7% -25%;
+  }
+
+  40% {
+    background-position: 20% 25%;
+  }
+
+  50% {
+    background-position: -25% 10%;
+  }
+
+  60% {
+    background-position: 15% 5%;
+  }
+
+  70% {
+    background-position: 0 15%;
+  }
+
+  80% {
+    background-position: 25% 35%;
+  }
+
+  90% {
+    background-position: -10% 10%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0.6;
+  }
+
+  20% {
+    opacity: 0.3;
+  }
+
+  35% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  60% {
+    opacity: 0.4;
+  }
+
+  80% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes scanlines {
+  from {
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+    background-size: 100% 4px;
+  }
+
+  to {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+    background-size: 100% 4px;
+  }
+}
+
+@keyframes rgbText {
+  0% {
+    text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 1px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);
+  }
+
+  25% {
+    text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 1px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);
+  }
+
+  45% {
+    text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 5px 0 1px rgba(251, 0, 231, 0.8), 0 5px 1px rgba(0, 233, 235, 0.8), -5px 0 1px rgba(0, 242, 14, 0.8), 0 -5px 1px rgba(244, 45, 0, 0.8), 5px 0 1px rgba(59, 0, 226, 0.8);
+  }
+
+  50% {
+    text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), -5px 0 1px rgba(251, 0, 231, 0.8), 0 -5px 1px rgba(0, 233, 235, 0.8), 5px 0 1px rgba(0, 242, 14, 0.8), 0 5px 1px rgba(244, 45, 0, 0.8), -5px 0 1px rgba(59, 0, 226, 0.8);
+  }
+
+  55% {
+    text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 3px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);
+  }
+
+  90% {
+    text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), -5px 0 1px rgba(251, 0, 231, 0.8), 0 5px 1px rgba(0, 233, 235, 0.8), 5px 0 1px rgba(0, 242, 14, 0.8), 0 -5px 1px rgba(244, 45, 0, 0.8), 5px 0 1px rgba(59, 0, 226, 0.8);
+  }
+
+  100% {
+    text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 5px 0 1px rgba(251, 0, 231, 0.8), 0 -5px 1px rgba(0, 233, 235, 0.8), -5px 0 1px rgba(0, 242, 14, 0.8), 0 5px 1px rgba(244, 45, 0, 0.8), -5px 0 1px rgba(59, 0, 226, 0.8);
+  }
+}
+
+@keyframes type {
+
+  0%,
+  19% {
+    opacity: 0;
+  }
+
+  20%,
+  100% {
+    opacity: 1;
+  }
+}
+
+#scream {
+  animation-name: hi;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  line-height: 0em;
+  bottom: 4px;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+@keyframes hi {
+  0% {
+    transform: rotate(3deg);
+  }
+
+  50% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+@font-face {
+  font-family: basiic;
+  src: url(/fonts/basiic.ttf) format("truetype");
+}
+
+body {
+  background-image: url('/img/space.gif');
+  background-color: #000000
+}
